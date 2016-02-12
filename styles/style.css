@@ -1,0 +1,770 @@
+@import url(http://fonts.googleapis.com/css?family=Satisfy);
+
+/*	1. Reset  */ 
+
+* {
+	appearance:normal;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	outline: none;
+	font-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+}
+*:focus {
+	outline: none;
+}
+
+*,*:after,*:before {	-webkit-box-sizing: border-box;	-moz-box-sizing: border-box;	box-sizing: border-box;	padding: 0;	margin: 0;}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x:hidden;
+}
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+a:hover{
+	text-decoration:none!important;
+}
+
+::selection {
+	background-color:#CCC;
+	color: #000;
+}
+
+div, a, p, img, blockquote, form, fieldset, textarea, input, label, iframe, code, pre {
+	display: block;
+}
+
+/*	2. Typography  */ 
+
+p {
+	line-height: 30px;
+	margin-bottom: 30px;
+	font-size:13px;
+	letter-spacing:0px;
+}
+
+p > a {
+	display: inline;
+	text-decoration: none;
+}
+
+p > a:hover {
+	text-decoration: underline;
+}
+
+p > span {
+	display: inline;
+}
+
+span > a {
+	display: inline;
+}
+
+a > span {
+	display: inline;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
+	display: inline;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	background-color: #f6f6f6;
+	border-left: 1px solid #e9e9e9;
+	border-top: 1px solid #e9e9e9;
+	width: 100%;
+	clear: both;
+	margin-bottom: 27px;
+}
+
+thead {}
+
+th {
+	vertical-align: middle;
+	border-bottom: 1px solid #e9e9e9;
+	border-right: 1px solid #e9e9e9;
+	font-weight: bold;
+	color: #555;
+	background-color: #f6f6f6;
+}
+
+tr {
+	line-height: 18px;
+}
+
+td {
+	border-right: 1px solid #e9e9e9;
+	border-bottom: 1px solid #e9e9e9;
+	text-align: center;
+	color: #666;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	line-height: 18px;
+	vertical-align: middle;
+	background-color: #fdfdfd;
+}
+
+tr:hover > td {
+	background: #fff;
+}
+
+ul {
+	margin-bottom: 20px;
+}
+
+ol {
+	margin-bottom: 30px;
+}
+li {
+	line-height: 18px;
+	margin-bottom:5px;
+	list-style:inside;
+}
+
+ol > li:last-child, ul > li:last-child {
+    margin-bottom:0px;	
+}
+
+/*//////////////////////////////////////*/
+/*Font Selection and General Font Colors*/
+/*//////////////////////////////////////*/
+
+body{
+	font-family:'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color:#666;
+	font-size:12px;
+	line-height:20px;
+}
+
+.checkbox{
+	color:#666;
+}
+
+h1{
+	font-size:21px;
+	margin-bottom:10px;
+	font-weight:800;
+	color:#212935;
+}
+
+h2{
+	font-size:19px;
+	margin-bottom:10px;
+	font-weight:800;
+	color:#212935;
+}
+
+h3{
+	font-size:17px;
+	margin-bottom:10px;
+	font-weight:500;
+	color:#212935
+}
+
+h4{
+	font-size:15px;
+	margin-bottom:10px;
+	font-weight:500;
+	color:#212935;
+}
+
+h5{
+	color:#212935;
+	font-size:13px;
+	margin-bottom:5px;
+	font-weight:500;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family:'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color:#1f1f1f;	
+}
+
+a:hover{
+	color:#2980b9;
+	transition:all 200ms ease;
+}
+
+a{
+	color:#3498db;
+	tramsition:all 200ms ease;
+}
+
+.clear {
+	clear: both;
+	height: 0px;
+	line-height: 0px;
+}
+
+/*Preloader*/
+
+
+#preloader {
+    position:fixed;
+    z-index:2500;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#FFF; 
+    z-index:99999999; 
+}
+
+#status {
+    position:fixed;
+    z-index:99999999;
+    width:250px;
+    height:250px;
+    position:absolute;
+    left:50%; 
+    top:60%; 
+    background-image:url(../images/preloader.gif); 
+    background-size:64px 64px;
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-125px 0 0 -125px; 
+}
+
+#status p{
+    text-align:center;
+    top:60%;
+}
+
+#status em{
+    font-size:10px!important;
+    display:block;
+    font-style:normal;
+}
+
+
+
+/*Page Design*/
+
+body{
+    background-color:#db4c70;   
+}
+
+.no-background{
+    background-color:transparent;
+}
+
+.background-image{
+    background-image:url(../images/00.jpg);
+    width:100%;
+    height:100%;
+    background-size:cover;
+    position:absolute;
+    z-index:0;
+}
+
+.overlay{
+    background-color:#db4c70;
+    opacity:0.90;
+    width:100%;
+    height:100%;
+    z-index:1;
+    position:absolute;
+}
+
+
+#flake{
+    position:absolute!important;
+    z-index:10;
+    opacity:0.1!important;   
+}
+
+.big-icon{
+    font-size:100px;  
+    color:#FFFFFF;
+    text-align:center;
+    display:block;
+    width:100%;
+    margin-bottom:30px;
+    position:absolute;
+}
+
+/*Simple Page Alignments*/
+
+.simple-text{
+    position:absolute;
+    top:50%;
+    width:100%;
+    z-index:999999;
+    display:block;
+    text-shadow:0px 3px 0px rgba(0,0,0,0.2);
+}
+
+.simple-text h1{
+    color:#FFFFFF;
+    font-family: 'Satisfy', cursive;   
+    text-align:center;
+}
+
+.simple-text h3{
+    color:#FFFFFF;
+    font-family: 'Satisfy', cursive; 
+    text-align:center;
+}
+    
+@media (min-width:300px) and (max-width:700px){
+
+    .simple-text{
+        height:250px;
+        margin-top:-125px;
+    }
+
+    .simple-text h1{
+        font-size:50px;
+        line-height:80px;
+        font-weight:200;
+        margin-top:120px;
+    }
+
+    .simple-text h3{
+        font-size:30px;
+        line-height:25px;
+        font-weight:400; 
+    }
+    
+}
+
+
+@media (min-width:700px) and (max-width:960px){
+    .pulse{
+        -webkit-transform:scale(1.3, 1.3)!important;
+        transform:scale(1.3, 1.3)!important;
+    }
+    
+    .simple-text{
+        height:280px;
+        margin-top:-125px;
+    }
+    
+    .simple-text h1{
+        font-size:72px;
+        line-height:90px;
+        font-weight:200;
+        margin-top:120px;
+    }
+
+    .simple-text h3{
+        font-size:40px;
+        line-height:35px;
+        font-weight:400; 
+        padding-top:10px;
+    }
+    
+}
+
+@media (min-width:960px){
+    .pulse{
+        -webkit-transform:scale(1.5, 1.5)!important;
+        transform:scale(1.5, 1.5)!important;
+    }
+    
+    .simple-text{
+        height:380px;
+        margin-top:-190px;
+        width:100%;
+    }
+    
+    .simple-text h1{
+        font-size:90px;
+        line-height:110px;
+        font-weight:200;
+        margin-top:150px;
+    }
+
+    .simple-text h3{
+        font-size:50px;
+        line-height:65px;
+        font-weight:400; 
+        padding-top:10px;
+    }
+    
+}
+
+/*Countdown Page Alignments*/
+
+
+/*Countdown*/
+
+.countdown{
+	display:block;	
+	width:260px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:40px;
+}
+
+.countdown-box{
+	float:left;	
+}
+
+.countdown-box span{
+	display:block;
+	text-align:center;
+	font-size:10px;
+	padding-top:5px;
+	text-transform:uppercase;
+	color:#FFFFFF;
+	opacity:0.5;
+	font-weight:600!important;
+}
+
+.countdown-years{
+	font-size:28px;	
+	font-weight:500;
+	margin-left:10px;
+	margin-right:10px;
+	padding-top:3px;
+	padding-bottom:3px;
+	color:#FFFFFF;
+}
+
+
+.countdown-days{
+	font-size:28px;	
+	font-weight:500;
+	margin-left:10px;
+	margin-right:10px;
+	padding-top:3px;
+	padding-bottom:3px;
+	color:#FFFFFF;
+}
+
+.countdown-hours{
+	font-size:28px;	
+	font-weight:500;
+	margin-left:10px;
+	margin-right:10px;
+	padding-top:3px;
+	padding-bottom:3px;
+	color:#FFFFFF;
+}
+
+.countdown-minutes{
+	font-size:28px;	
+	font-weight:500;
+	margin-left:10px;
+	margin-right:10px;
+	padding-top:3px;
+	padding-bottom:3px;
+	color:#FFFFFF;
+}
+
+.countdown-seconds{
+	font-size:28px;	
+	font-weight:500;
+	margin-left:10px;
+	margin-right:10px;
+	padding-top:3px;
+	padding-bottom:3px;
+	color:#FFFFFF;
+}
+
+.countdown-text{
+    position:absolute;
+    top:50%;
+    width:100%;
+    z-index:999999;
+    display:block;
+    text-shadow:0px 3px 0px rgba(0,0,0,0.2);
+}
+
+.countdown-text h1{
+    color:#FFFFFF;
+    font-family: 'Satisfy', cursive;   
+    text-align:center;
+}
+
+.countdown-text h3{
+    color:#FFFFFF;
+    font-family: 'Satisfy', cursive; 
+    text-align:center;
+}
+
+    
+@media (min-width:300px) and (max-width:700px){
+    .countdown-text{
+        height:400px;
+        margin-top:-200px;
+    }
+
+    .countdown-text h1{
+        font-size:32px;
+        line-height:80px;
+        font-weight:200;
+        margin-top:120px;
+    }    
+}
+
+
+@media (min-width:700px) and (max-width:960px){
+    .pulse{
+        -webkit-transform:scale(1.3, 1.3)!important;
+        transform:scale(1.3, 1.3)!important;
+    }
+    
+    .countdown-text{
+        height:410px;
+        margin-top:-205px;
+    }
+    
+    .countdown-text h1{
+        font-size:36px;
+        line-height:90px;
+        font-weight:200;
+        margin-top:120px;
+    }    
+}
+
+@media (min-width:960px){
+    .pulse{
+        -webkit-transform:scale(1.5, 1.5)!important;
+        transform:scale(1.5, 1.5)!important;
+    }
+    
+    .countdown-text{
+        height:470px;
+        margin-top:-235px;
+        width:100%;
+    }
+    
+    .countdown-text h1{
+        font-size:48px;
+        line-height:110px;
+        font-weight:200;
+        margin-top:120px;
+    }
+    
+    .countdown{
+        width:390px;
+        margin-top:0px;
+    }
+
+    .countdown div{
+        font-size:40px; 
+        padding-bottom:30px;
+        font-weight:400;
+        margin-left:8px;
+        margin-right:8px;
+    }
+    
+    .countdown span{
+        font-size:14px;   
+    }
+    
+}
+
+
+/*Subscribe*/
+
+.nameField{display:none;}
+.contactTextarea{display:none;}
+
+.contact-form{
+    width:100%;
+    display:block;
+    clear:both;
+    margin-top:30px;
+}
+
+.emailField{
+    width:300px;
+    height:40px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:20px;
+    padding-right:20px;
+    -webkit-box-shadow: 0 2px 2px 2px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 2px 2px rgba(0,0,0,0.1);
+    color:rgba(0,0,0,0.5);
+}
+
+.emailField:focus{
+    color:rgba(0,0,0,1);
+}
+
+.contactSubmitButton{
+    width:100px;
+    height:40px;
+    line-height:40px;
+    margin-top:30px;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#c0392b;
+    color:#FFFFFF;
+    font-weight:500;
+    cursor:pointer;
+    -webkit-box-shadow: 0 1px 1px 1px rgba(0,0,0,0.1);
+            box-shadow: 0 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.contactSubmitButton:hover{
+    opacity:0.8;
+}
+
+.formValidationError p{
+    text-align:center;
+    color:#FFFFFF;
+    font-weight:500;
+    text-shadow:0px 1px 0px #000000;
+    font-size:14px!important;
+    padding-top:20px;
+    margin-bottom:0px;
+}
+
+
+/*Simple Page Alignments*/
+
+.subscribe-text{
+    position:absolute;
+    top:50%;
+    width:100%;
+    z-index:999999;
+    display:block;
+    text-shadow:0px 3px 0px rgba(0,0,0,0.2);
+}
+
+.subscribe-text h1{
+    color:#FFFFFF;
+    font-family: 'Satisfy', cursive;   
+    text-align:center;
+}
+
+.subscribe-text h3{
+    color:#FFFFFF;
+    font-family: 'Satisfy', cursive; 
+    text-align:center;
+}
+    
+@media (min-width:300px) and (max-width:700px){
+
+    .subscribe-text{
+        height:390px;
+        margin-top:-190px;
+    }
+
+    .subscribe-text h1{
+        font-size:50px;
+        line-height:80px;
+        font-weight:200;
+        margin-top:120px;
+    }
+
+    .subscribe-text h3{
+        font-size:20px;
+        line-height:25px;
+        font-weight:400;
+        padding-bottom:0px;
+    }
+    
+}
+
+
+@media (min-width:700px) and (max-width:960px){
+    .pulse{
+        -webkit-transform:scale(1.3, 1.3)!important;
+        transform:scale(1.3, 1.3)!important;
+    }
+    
+    .subscribe-text{
+        height:460px;
+        margin-top:-230px;
+    }
+    
+    .subscribe-text h1{
+        font-size:72px;
+        line-height:70px;
+        font-weight:200;
+        margin-top:120px;
+    }
+
+    .subscribe-text h3{
+        font-size:28px;
+        line-height:28px;
+        font-weight:400; 
+        padding-top:30px;
+        padding-bottom:30px;
+    }
+    
+}
+
+@media (min-width:960px){
+    .pulse{
+        -webkit-transform:scale(1.5, 1.5)!important;
+        transform:scale(1.5, 1.5)!important;
+    }
+    
+    .subscribe-text{
+        height:490px;
+        margin-top:-245px;
+        width:100%;
+    }
+    
+    .subscribe-text h1{
+        font-size:90px;
+        line-height:90px;
+        font-weight:200;
+        margin-top:150px;
+    }
+
+    .subscribe-text h3{
+        font-size:24px;
+        line-height:65px;
+        font-weight:400; 
+        padding-top:10px;
+    }
+    
+}
+
+/*Countdown Page Ali
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
